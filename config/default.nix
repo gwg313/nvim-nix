@@ -1,7 +1,9 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./bufferline.nix
+    ./lightline.nix
+    ./colorscheme.nix
     ./options.nix
+    ./gitsigns.nix
   ];
 }

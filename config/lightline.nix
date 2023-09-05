@@ -1,5 +1,5 @@
 {
-  plugins.bufferline = {
+  plugins.lightline = {
     enable = true;
   };
 }
