@@ -2,6 +2,7 @@
 {
   plugins.neogit = {
     enable = true;
+    disableCommitConfirmation = true;
   };
 
    maps = {
@@ -10,4 +11,3 @@
       };
     };
 }
-
