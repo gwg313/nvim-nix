@@ -13,6 +13,7 @@
     ./noice.nix
     ./neogit.nix
     ./surround.nix
+    ./nix.nix
     ./which-key.nix
   ];
 }

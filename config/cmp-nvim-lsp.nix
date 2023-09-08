@@ -1,5 +1,9 @@
 {
 
+  
+  plugins.lsp = {
+    enable = true;
+  };
   plugins.nvim-cmp = {
     enable = true;
   };
