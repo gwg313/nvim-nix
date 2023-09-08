@@ -14,6 +14,8 @@
     ./neogit.nix
     ./surround.nix
     ./nix.nix
+    ./leap.nix
+    ./diffview.nix
     ./which-key.nix
   ];
 }
