@@ -1,5 +1,6 @@
 {
 config = {
+globals.mapleader = " ";
 clipboard = {
   # Use system clipboard
   register = "unnamedplus";
