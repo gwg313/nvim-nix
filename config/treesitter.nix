@@ -5,11 +5,7 @@
     nixvimInjections = true;
   };
 
-  plugins.treesitter-context = {
-    enable = true;
-  };
+  plugins.treesitter-context = { enable = true; };
 
-  plugins.treesitter-refactor = {
-    enable = true;
-  };
+  plugins.treesitter-refactor = { enable = true; };
 }

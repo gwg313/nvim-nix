@@ -4,9 +4,12 @@
     disableCommitConfirmation = true;
   };
 
-   maps = {
-      normal = {
-        "<leader>gg" = { action = ":Neogit<CR>"; silent = true; };
+  maps = {
+    normal = {
+      "<leader>gg" = {
+        action = ":Neogit<CR>";
+        silent = true;
       };
     };
+  };
 }

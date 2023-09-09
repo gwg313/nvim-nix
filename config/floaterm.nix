@@ -1,5 +1,1 @@
-{
-  plugins.floaterm = {
-    enable = true;
-  };
-}
+{ plugins.floaterm = { enable = true; }; }

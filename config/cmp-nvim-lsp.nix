@@ -14,9 +14,7 @@
     enable = true;
     cmp.enable = true;
   };
-  plugins.luasnip = {
-    enable = true;
-  };
+  plugins.luasnip = { enable = true; };
   plugins.cmp_luasnip.enable = true;
 
   plugins.nvim-cmp = {
@@ -34,10 +32,7 @@
           end
           end
         '';
-        modes = [
-          "i"
-          "s"
-        ];
+        modes = [ "i" "s" ];
       };
     };
     sources = [
@@ -49,18 +44,10 @@
     ];
   };
 
-  plugins.cmp-buffer = {
-    enable = true;
-  };
+  plugins.cmp-buffer = { enable = true; };
 
-  plugins.cmp-nvim-lsp = {
-    enable = true;
-  };
-  plugins.cmp-nvim-lua = {
-    enable = true;
-  };
+  plugins.cmp-nvim-lsp = { enable = true; };
+  plugins.cmp-nvim-lua = { enable = true; };
 
-  plugins.cmp-path = {
-    enable = true;
-  };
+  plugins.cmp-path = { enable = true; };
 }

@@ -7,15 +7,16 @@
   };
   maps = {
     normal = {
-      "<leader>ff" = { action = ":Telescope find_files<CR>"; silent = true; };
+      "<leader>ff" = {
+        action = ":Telescope find_files<CR>";
+        silent = true;
+      };
     };
     visual = {
       ">" = ">gv";
       "<" = "<gv";
     };
   };
-  extraPackages = with pkgs; [
-    fzf
-  ];
+  extraPackages = with pkgs; [ fzf ];
 }
 
