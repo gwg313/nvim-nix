@@ -18,6 +18,7 @@
     ./dadbod.nix
     ./treesitter.nix
     ./diffview.nix
+    ./harpoon.nix
     ./which-key.nix
   ];
 }
