@@ -8,7 +8,7 @@
         silent = true;
       };
       "<leader>ma" = {
-        action = ":lua require('harpoon.ui').add_file()<CR>";
+        action = ":lua require('harpoon.mark').add_file()<CR>";
         silent = true;
       };
       "<leader>mn" = {
