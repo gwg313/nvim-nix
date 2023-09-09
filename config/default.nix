@@ -15,6 +15,8 @@
     ./surround.nix
     ./nix.nix
     ./leap.nix
+    ./dadbod.nix
+    ./treesitter.nix
     ./diffview.nix
     ./which-key.nix
   ];
