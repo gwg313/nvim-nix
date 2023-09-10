@@ -18,7 +18,9 @@
     enable = true;
     cmp.enable = true;
   };
-  plugins.luasnip = { enable = true; };
+  plugins.luasnip = { 
+    enable = true; 
+  };
   plugins.cmp_luasnip.enable = true;
   extraPackages = with pkgs; [ fzf ];
 

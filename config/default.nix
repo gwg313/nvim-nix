@@ -1,6 +1,7 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./autopairs.nix
     ./cmp-nvim-lsp.nix
     ./colorscheme.nix
     ./comment-nvim.nix
@@ -9,9 +10,11 @@
     ./diffview.nix
     ./floaterm.nix
     ./gitsigns.nix
+#    ./nvim-ufo.nix
     ./harpoon.nix
     ./leap.nix
-    ./lightline.nix
+    ./lualine.nix
+    ./mappings.nix
     ./neogit.nix
     ./nix.nix
     ./noice.nix
@@ -21,6 +24,8 @@
     ./surround.nix
     ./telescope.nix
     ./treesitter.nix
+    ./trouble.nix
+    ./undotree.nix
     ./which-key.nix
   ];
 }

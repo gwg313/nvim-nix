@@ -1,4 +1,5 @@
-{ colorschemes.catppuccin = { 
+{ colorschemes.tokyonight = { 
   enable = true;
+  style = "night";
 }; 
 }

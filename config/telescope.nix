@@ -41,10 +41,6 @@
         silent = true;
     };
     };
-    visual = {
-      ">" = ">gv";
-      "<" = "<gv";
-    };
   };
   extraPackages = with pkgs; [ fzf ];
 }

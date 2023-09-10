@@ -7,7 +7,7 @@
   maps = {
     normal = {
       "<leader>_" = {
-        action = ":Oil<CR>";
+        action = "<cmd>Oil<CR>";
         silent = true;
       };
     };
