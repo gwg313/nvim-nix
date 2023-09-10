@@ -14,7 +14,7 @@
       };
 
       formatting = {
-        nixfmt.enable = true;
+        alejandra.enable = true;
         black.enable = true;
         isort.enable = true;
         shfmt.enable = true;

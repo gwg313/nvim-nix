@@ -1,25 +1,26 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./options.nix
-    ./colorscheme.nix
-    ./lightline.nix
-    ./gitsigns.nix
-    ./floaterm.nix
-    ./comment-nvim.nix
     ./cmp-nvim-lsp.nix
-    ./telescope.nix
-    ./oil.nix
-    ./noice.nix
-    ./neogit.nix
-    ./surround.nix
-    ./nix.nix
-    ./leap.nix
+    ./colorscheme.nix
+    ./comment-nvim.nix
     ./dadbod.nix
-    ./treesitter.nix
+    ./dap.nix
     ./diffview.nix
+    ./floaterm.nix
+    ./gitsigns.nix
     ./harpoon.nix
+    ./leap.nix
+    ./lightline.nix
+    ./neogit.nix
+    ./nix.nix
+    ./noice.nix
     ./null-ls.nix
+    ./oil.nix
+    ./options.nix
+    ./surround.nix
+    ./telescope.nix
+    ./treesitter.nix
     ./which-key.nix
   ];
 }
