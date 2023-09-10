@@ -1,10 +1,14 @@
+{ pkgs, ... }:
 {
   plugins.lsp = {
     enable = true;
     servers = {
-      nixd.enable = true;
+      #      nixd.enable = true;
       pyright.enable = true;
       bashls.enable = true;
+      terraformls.enable = true;
+      yamlls.enable = true;
+      gopls.enable = true;
     };
   };
 
@@ -16,6 +20,7 @@
   };
   plugins.luasnip = { enable = true; };
   plugins.cmp_luasnip.enable = true;
+  extraPackages = with pkgs; [ fzf ];
 
   plugins.nvim-cmp = {
     enable = true;
@@ -50,4 +55,13 @@
   plugins.cmp-nvim-lua = { enable = true; };
 
   plugins.cmp-path = { enable = true; };
+
+  maps = {
+    normal = {
+      "<leader>lf" = {
+        action = ":lua vim.lsp.buf.format()<CR>";
+        silent = true;
+      };
+    };
+  };
 }

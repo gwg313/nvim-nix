@@ -19,6 +19,7 @@
     ./treesitter.nix
     ./diffview.nix
     ./harpoon.nix
+    ./null-ls.nix
     ./which-key.nix
   ];
 }
