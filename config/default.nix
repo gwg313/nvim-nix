@@ -25,6 +25,7 @@
     ./telescope.nix
     ./treesitter.nix
     ./trouble.nix
+    ./todo-comments.nix
     ./undotree.nix
     ./which-key.nix
   ];

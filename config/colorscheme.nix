@@ -1,5 +1,5 @@
-{ colorschemes.tokyonight = { 
+{ colorschemes.base16 = { 
   enable = true;
-  style = "night";
+  colorscheme = "everforest";
 }; 
 }
