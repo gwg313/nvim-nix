@@ -8,4 +8,17 @@
     changedelete.text = "󰐊";
   };
 }; 
+
+keymaps = [
+  {
+    mode = "n";
+    key = "<leader>gs";
+    action = "<cmd>Gitsigns stage_hunk<CR>";
+#    lua = true;
+    options = {
+      silent = true;
+      desc = "Stage Hunk";
+    };
+  }
+];
 }
