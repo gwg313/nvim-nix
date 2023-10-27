@@ -1,1 +1,11 @@
-{ plugins.gitsigns = { enable = true; }; }
+{ plugins.gitsigns = { 
+  enable = true;
+  signs = {
+    add.text = "▎";
+    change.text = "▎";
+    delete.text = "󰐊";
+    topdelete.text = "󰐊";
+    changedelete.text = "󰐊";
+  };
+}; 
+}

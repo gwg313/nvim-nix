@@ -4,13 +4,17 @@
   plugins.oil.columns.icon = { enable = true; };
   extraPlugins = with pkgs.vimPlugins; [ nvim-web-devicons ];
 
-  maps = {
-    normal = {
-      "<leader>_" = {
-        action = "<cmd>Oil<CR>";
-        silent = true;
-      };
+keymaps = [
+  {
+    mode = "n";
+    key = "<leader>_";
+    action = "<cmd>Oil --float<CR>";
+#    lua = true;
+    options = {
+      silent = true;
+      desc = "󰏇 Oil";
     };
-  };
+  }
+];
 }
 

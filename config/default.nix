@@ -8,14 +8,18 @@
     ./dadbod.nix
     ./dap.nix
     ./diffview.nix
+    ./flash.nix
     ./floaterm.nix
     ./gitsigns.nix
 #    ./nvim-ufo.nix
     ./harpoon.nix
-    ./leap.nix
+#    ./leap.nix
     ./lualine.nix
+    ./luasnip.nix
     ./mappings.nix
+    ./multicursors.nix
     ./neogit.nix
+    ./neorg.nix
     ./nix.nix
     ./noice.nix
     ./null-ls.nix
@@ -26,6 +30,7 @@
     ./treesitter.nix
     ./trouble.nix
     ./todo-comments.nix
+    ./tmux-navigator.nix
     ./undotree.nix
     ./which-key.nix
   ];

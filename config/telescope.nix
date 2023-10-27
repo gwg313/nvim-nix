@@ -8,6 +8,7 @@
   maps = {
     normal = {
       "<leader>f" = {
+        action = "???";
         desc = "  Find";
       };
       "<leader>ff" = {

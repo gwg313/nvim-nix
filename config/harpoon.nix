@@ -3,9 +3,10 @@
 
   maps = {
     normal = {
-      "<leader>m" = {
-        desc = " 󱋼 Marks";
-      };
+#      "<leader>m" = {
+#        action = "???";
+#        desc = " 󱋼 Marks";
+#      };
       "<leader>mm" = {
         desc = "Mark Menu";
         action = ":lua require('harpoon.ui').toggle_quick_menu()<CR>";

@@ -14,6 +14,7 @@
   maps = {
     normal = {
       "<leader>d" = {
+        action = "???";
         desc = "  Dap";
       };
       "<leader>dc" = {

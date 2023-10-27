@@ -5,9 +5,6 @@
 
   maps = {
     normal = {
-      "<leader>t" = {
-        desc = "  Trouble";
-      };
       "<leader>tt" = {
         desc = "Trouble Toggle";
         action = "<cmd>TroubleToggle<CR>";
