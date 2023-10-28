@@ -22,7 +22,7 @@
     ./neorg.nix
     ./nix.nix
     ./noice.nix
-    ./null-ls.nix
+    ./none-ls.nix
     ./oil.nix
     ./options.nix
     ./surround.nix

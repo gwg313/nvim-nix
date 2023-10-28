@@ -9,6 +9,7 @@
       terraformls.enable = true;
       yamlls.enable = true;
       gopls.enable = true;
+      elixirls.enable = true;
     };
   };
 
