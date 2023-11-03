@@ -8,12 +8,13 @@
     ./dadbod.nix
     ./dap.nix
     ./diffview.nix
+    ./extraplugins.nix
     ./flash.nix
     ./floaterm.nix
     ./gitsigns.nix
-#    ./nvim-ufo.nix
+    #    ./nvim-ufo.nix
     ./harpoon.nix
-#    ./leap.nix
+    #    ./leap.nix
     ./lualine.nix
     ./luasnip.nix
     ./lightbulb.nix

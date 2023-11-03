@@ -117,11 +117,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1698553279,
-        "narHash": "sha256-T/9P8yBSLcqo/v+FTOBK+0rjzjPMctVymZydbvR/Fak=",
+        "lastModified": 1698931758,
+        "narHash": "sha256-pwl9xS9JFMXXR1lUP/QOqO9hiZKukEcVUU1A0DKQwi4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "90e85bc7c1a6fc0760a94ace129d3a1c61c3d035",
+        "rev": "b644d97bda6dae837d577e28383c10aa51e5e2d2",
         "type": "github"
       },
       "original": {
@@ -171,15 +171,15 @@
       "locked": {
         "lastModified": 1699022904,
         "narHash": "sha256-Qc0zMAsRU7gyqHmkc9QUP/FHCNKNkoYGoojnMAUcUQg=",
-        "ref": "refs/heads/main",
+        "owner": "pta2002",
+        "repo": "nixvim",
         "rev": "76291156fa182a7d3fdfa9233a7bcbe116c50b68",
-        "revCount": 715,
-        "type": "git",
-        "url": "file:///home/glen/Projects/nixvim"
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "file:///home/glen/Projects/nixvim"
+        "owner": "pta2002",
+        "repo": "nixvim",
+        "type": "github"
       }
     },
     "poetry2nix": {
