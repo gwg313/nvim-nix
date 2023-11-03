@@ -117,11 +117,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1698336494,
-        "narHash": "sha256-sO72WDBKyijYD1GcKPlGsycKbMBiTJMBCnmOxLAs880=",
+        "lastModified": 1698553279,
+        "narHash": "sha256-T/9P8yBSLcqo/v+FTOBK+0rjzjPMctVymZydbvR/Fak=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "808c0d8c53c7ae50f82aca8e7df263225cf235bf",
+        "rev": "90e85bc7c1a6fc0760a94ace129d3a1c61c3d035",
         "type": "github"
       },
       "original": {
@@ -169,17 +169,17 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1698504351,
-        "narHash": "sha256-/bj7Sy32j2HPtIuwjV94ZqF3A8A3CIouOngz8pdMn2I=",
-        "owner": "pta2002",
-        "repo": "nixvim",
-        "rev": "9004ffe32f68bb9cc3e5907bdb55ceccddca44a0",
-        "type": "github"
+        "lastModified": 1699022904,
+        "narHash": "sha256-Qc0zMAsRU7gyqHmkc9QUP/FHCNKNkoYGoojnMAUcUQg=",
+        "ref": "refs/heads/main",
+        "rev": "76291156fa182a7d3fdfa9233a7bcbe116c50b68",
+        "revCount": 715,
+        "type": "git",
+        "url": "file:///home/glen/Projects/nixvim"
       },
       "original": {
-        "owner": "pta2002",
-        "repo": "nixvim",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/glen/Projects/nixvim"
       }
     },
     "poetry2nix": {

@@ -3,7 +3,7 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      #      nixd.enable = true;
+      nixd.enable = true;
       pyright.enable = true;
       bashls.enable = true;
       terraformls.enable = true;

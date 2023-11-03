@@ -16,7 +16,9 @@
 #    ./leap.nix
     ./lualine.nix
     ./luasnip.nix
+    ./lightbulb.nix
     ./mappings.nix
+    ./markdown-preview.nix
     ./multicursors.nix
     ./neogit.nix
     ./neorg.nix

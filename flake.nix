@@ -2,7 +2,8 @@
   description = "gwg313 nixvim configuration";
 
   inputs = {
-    nixvim.url = "github:pta2002/nixvim";
+    #nixvim.url = "github:pta2002/nixvim";
+    nixvim.url = "/home/glen/Projects/nixvim";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
