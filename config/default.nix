@@ -7,6 +7,7 @@
     ./comment-nvim.nix
     ./dadbod.nix
     ./dap.nix
+    ./dashboard.nix
     ./diffview.nix
     ./extraplugins.nix
     ./flash.nix
