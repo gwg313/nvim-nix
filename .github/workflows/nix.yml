@@ -1,0 +1,16 @@
+on: [push, pull_request]
+name: Basic Checks
+jobs:
+  formatting-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: cachix/install-nix-action@v23
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: Check nix file formatting
+        run: nix develop --command alejandra --check .
+
+      - name: Check that nvim builds
+        run: nix flake check
