@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   plugins.lsp = {
     enable = true;
     servers = {
@@ -19,11 +18,11 @@
     enable = true;
     cmp.enable = true;
   };
-  plugins.luasnip = { 
-    enable = true; 
+  plugins.luasnip = {
+    enable = true;
   };
   plugins.cmp_luasnip.enable = true;
-  extraPackages = with pkgs; [ fzf ];
+  extraPackages = with pkgs; [fzf];
 
   plugins.nvim-cmp = {
     enable = true;
@@ -40,24 +39,24 @@
           end
           end
         '';
-        modes = [ "i" "s" ];
+        modes = ["i" "s"];
       };
     };
     sources = [
-      { name = "buffer"; }
-      { name = "luasnip"; }
-      { name = "nvim_lsp"; }
-      { name = "path"; }
-      { name = "tmux"; }
+      {name = "buffer";}
+      {name = "luasnip";}
+      {name = "nvim_lsp";}
+      {name = "path";}
+      {name = "tmux";}
     ];
   };
 
-  plugins.cmp-buffer = { enable = true; };
+  plugins.cmp-buffer = {enable = true;};
 
-  plugins.cmp-nvim-lsp = { enable = true; };
-  plugins.cmp-nvim-lua = { enable = true; };
+  plugins.cmp-nvim-lsp = {enable = true;};
+  plugins.cmp-nvim-lua = {enable = true;};
 
-  plugins.cmp-path = { enable = true; };
+  plugins.cmp-path = {enable = true;};
 
   maps = {
     normal = {

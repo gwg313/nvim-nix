@@ -27,6 +27,7 @@
     ./nix.nix
     ./noice.nix
     ./none-ls.nix
+    ./notify.nix
     ./oil.nix
     ./options.nix
     ./surround.nix

@@ -1,5 +1,3 @@
 {
-  plugins.comment-nvim = { enable = true; }; 
-
+  plugins.comment-nvim = {enable = true;};
 }
-

@@ -1,6 +1,6 @@
-{ 
+{
   plugins.which-key = {
-    enable = true; 
+    enable = true;
     registrations = {
       "<leader>m" = "󱋼 Marks";
       "<leader>t" = " Trouble";
@@ -8,6 +8,5 @@
       "<leader>d" = " Dap";
       "<leader>n" = " Neorg";
     };
-  }; 
-
-  }
+  };
+}

@@ -1,4 +1,3 @@
-{ pkgs, ... }: {
-
-  extraPlugins = with pkgs.vimPlugins; [ zenbones-nvim lush-nvim ];
+{pkgs, ...}: {
+  #extraPlugins = with pkgs.vimPlugins; [ zenbones-nvim lush-nvim ];
 }

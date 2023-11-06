@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   plugins.telescope = {
     enable = true;
     extensions.fzf-native.enable = true;
@@ -40,9 +38,8 @@
         desc = "Find Treesitter";
         action = "<cmd>lua require('telescope.builtin').treesitter()<CR>";
         silent = true;
-    };
+      };
     };
   };
-  extraPackages = with pkgs; [ fzf ];
+  extraPackages = with pkgs; [fzf];
 }
-

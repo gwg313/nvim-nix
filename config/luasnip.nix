@@ -1,10 +1,10 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   plugins.luasnip = {
     enable = true;
-    fromVscode = [ 
-    {}
+    fromVscode = [
+      {}
       {paths = ./snippets;}
     ];
   };
-  extraPlugins = with pkgs.vimPlugins; [ friendly-snippets ];
+  extraPlugins = with pkgs.vimPlugins; [friendly-snippets];
 }

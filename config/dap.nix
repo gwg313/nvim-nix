@@ -41,7 +41,7 @@
         desc = "Step Over";
         action = "<cmd>lua function() require('dap').step_over()<CR>";
         silent = true;
-    };
+      };
       "<leader>dr" = {
         desc = "Repl";
         action = "<cmd>lua function() require('dap').repl.open()<CR>";
