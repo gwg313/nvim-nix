@@ -58,12 +58,16 @@
 
   plugins.cmp-path = {enable = true;};
 
-  maps = {
-    normal = {
-      "<leader>lf" = {
-        action = ":lua vim.lsp.buf.format()<CR>";
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>lf";
+      action = ":lua vim.lsp.buf.format()<CR>";
+      #    lua = true;
+      options = {
         silent = true;
+        desc = "Format";
       };
-    };
-  };
+    }
+  ];
 }

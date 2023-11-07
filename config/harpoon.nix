@@ -1,32 +1,48 @@
 {
   plugins.harpoon = {enable = true;};
 
-  maps = {
-    normal = {
-      #      "<leader>m" = {
-      #        action = "???";
-      #        desc = " 󱋼 Marks";
-      #      };
-      "<leader>mm" = {
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>mm";
+      action = ":lua require('harpoon.ui').toggle_quick_menu()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Mark Menu";
-        action = ":lua require('harpoon.ui').toggle_quick_menu()<CR>";
-        silent = true;
       };
-      "<leader>ma" = {
+    }
+
+    {
+      mode = "n";
+      key = "<leader>ma";
+      action = ":lua require('harpoon.mark').add_file()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Mark File";
-        action = ":lua require('harpoon.mark').add_file()<CR>";
-        silent = true;
       };
-      "<leader>mn" = {
+    }
+    {
+      mode = "n";
+      key = "<leader>mn";
+      action = ":lua require('harpoon.ui').nav_next()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Next Mark";
-        action = ":lua require('harpoon.ui').nav_next()<CR>";
-        silent = true;
       };
-      "<leader>mp" = {
+    }
+
+    {
+      mode = "n";
+      key = "<leader>mp";
+      action = ":lua require('harpoon.ui').nav_prev()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Prev Mark";
-        action = ":lua require('harpoon.ui').nav_prev()<CR>";
-        silent = true;
       };
-    };
-  };
+    }
+  ];
 }

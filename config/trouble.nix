@@ -3,31 +3,49 @@
     enable = true;
   };
 
-  maps = {
-    normal = {
-      "<leader>tt" = {
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>tt";
+      action = "<cmd>TroubleToggle<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Trouble Toggle";
-        action = "<cmd>TroubleToggle<CR>";
-        silent = true;
       };
+    }
 
-      "<leader>tw" = {
+    {
+      mode = "n";
+      key = "<leader>tw";
+      action = "<cmd>TroubleToggle workspace_diagnostics<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Workspace Diagnostics";
-        action = "<cmd>TroubleToggle workspace_diagnostics<CR>";
-        silent = true;
       };
+    }
 
-      "<leader>tq" = {
+    {
+      mode = "n";
+      key = "<leader>tq";
+      action = "<cmd>TroubleToggle quickfix<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Quickfix";
-        action = "<cmd>TroubleToggle quickfix<CR>";
-        silent = true;
       };
+    }
 
-      "gR" = {
-        desc = "Lsp References";
-        action = "<cmd>TroubleToggle lsp_references<CR>";
+    {
+      mode = "n";
+      key = "gR";
+      action = "<cmd>TroubleToggle lsp_references<CR>";
+      #    lua = true;
+      options = {
         silent = true;
+        desc = "Lsp References";
       };
-    };
-  };
+    }
+  ];
 }

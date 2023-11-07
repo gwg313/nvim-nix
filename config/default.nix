@@ -2,6 +2,7 @@
   # Import all your configuration modules here
   imports = [
     ./autopairs.nix
+    #    ./bufferline.nix
     ./cmp-nvim-lsp.nix
     ./colorscheme.nix
     ./comment-nvim.nix
@@ -12,16 +13,17 @@
     ./extraplugins.nix
     ./flash.nix
     ./floaterm.nix
+    ./git-worktree.nix
     ./gitsigns.nix
-    #    ./nvim-ufo.nix
     ./harpoon.nix
-    #    ./leap.nix
+    ./lightbulb.nix
     ./lualine.nix
     ./luasnip.nix
-    ./lightbulb.nix
     ./mappings.nix
     ./markdown-preview.nix
     ./multicursors.nix
+    ./navbuddy.nix
+    ./navic.nix
     ./neogit.nix
     ./neorg.nix
     ./nix.nix
@@ -32,10 +34,10 @@
     ./options.nix
     ./surround.nix
     ./telescope.nix
+    ./tmux-navigator.nix
+    ./todo-comments.nix
     ./treesitter.nix
     ./trouble.nix
-    ./todo-comments.nix
-    ./tmux-navigator.nix
     ./undotree.nix
     ./which-key.nix
   ];

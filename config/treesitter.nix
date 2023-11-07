@@ -6,7 +6,7 @@
       nixvimInjections = true;
     };
 
-    treesitter-context = {enable = true;};
+    treesitter-context = {enable = false;};
 
     treesitter-refactor = {
       enable = true;
