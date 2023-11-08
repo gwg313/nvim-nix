@@ -11,46 +11,93 @@
     };
   };
 
-  maps = {
-    normal = {
-      "<leader>d" = {
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>d";
+      action = "???";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "  Dap";
       };
-      "<leader>dc" = {
+    }
+
+    {
+      mode = "n";
+      key = "<leader>dc";
+      action = "<cmd>lua function() require('dap').continue()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Continue";
-        action = "<cmd>lua function() require('dap').continue()<CR>";
-        silent = true;
       };
-      "<leader>db" = {
+    }
+
+    {
+      mode = "n";
+      key = "<leader>db";
+      action = "<cmd>lua require('dap').toggle_breakpoint()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Toggle Breakpoint";
-        action = "<cmd>lua require('dap').toggle_breakpoint()<CR>";
-        silent = true;
       };
-      "<leader>di" = {
+    }
+
+    {
+      mode = "n";
+      key = "<leader>di";
+      action = "<cmd>lua require('dap').step_into()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Step Into";
-        action = "<cmd>lua require('dap').step_into()<CR>";
-        silent = true;
       };
-      "<leader>do" = {
+    }
+
+    {
+      mode = "n";
+      key = "<leader>do";
+      action = "<cmd>lua require('dap').step_out()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Step Out";
-        action = "<cmd>lua require('dap').step_out()<CR>";
-        silent = true;
       };
-      "<leader>dv" = {
+    }
+
+    {
+      mode = "n";
+      key = "<leader>dv";
+      action = "<cmd>lua function() require('dap').step_over()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Step Over";
-        action = "<cmd>lua function() require('dap').step_over()<CR>";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>dr";
+      action = "<cmd>lua function() require('dap').repl.open()<CR>";
+      #    lua = true;
+      options = {
         silent = true;
-    };
-      "<leader>dr" = {
         desc = "Repl";
-        action = "<cmd>lua function() require('dap').repl.open()<CR>";
-        silent = true;
       };
-      "<leader>dl" = {
+    }
+
+    {
+      mode = "n";
+      key = "<leader>dl";
+      action = "<cmd>lua function() require('dap').run_last()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "Run Last";
-        action = "<cmd>lua function() require('dap').run_last()<CR>";
-        silent = true;
       };
-    };
-  };
+    }
+  ];
 }

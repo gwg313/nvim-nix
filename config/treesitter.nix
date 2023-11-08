@@ -1,11 +1,16 @@
 {
-  plugins.treesitter = {
-    enable = true;
-    indent = true;
-    nixvimInjections = true;
+  plugins = {
+    treesitter = {
+      enable = true;
+      indent = true;
+      nixvimInjections = true;
+    };
+
+    treesitter-context = {enable = false;};
+
+    treesitter-refactor = {
+      enable = true;
+      highlightDefinitions.enable = true;
+    };
   };
-
-  plugins.treesitter-context = { enable = true; };
-
-  plugins.treesitter-refactor = { enable = true; };
 }

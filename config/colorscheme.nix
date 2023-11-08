@@ -1,5 +1,6 @@
-{ colorschemes.tokyonight = { 
-  enable = true;
-  style = "night";
-}; 
+{
+  colorschemes.tokyonight = {
+    enable = true;
+    style = "storm";
+  };
 }

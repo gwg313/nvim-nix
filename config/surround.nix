@@ -1,1 +1,1 @@
-{ plugins.surround = { enable = true; }; }
+{plugins.surround = {enable = true;};}

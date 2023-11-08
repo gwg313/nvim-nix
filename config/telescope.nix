@@ -1,47 +1,86 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   plugins.telescope = {
     enable = true;
     extensions.fzf-native.enable = true;
   };
-  maps = {
-    normal = {
-      "<leader>f" = {
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>f";
+      action = "???";
+      #    lua = true;
+      options = {
+        silent = true;
         desc = "  Find";
       };
-      "<leader>ff" = {
-        desc = "Find Files";
-        action = "<cmd>lua require('telescope.builtin').find_files()<CR>";
-        silent = true;
-      };
-      "<leader>fg" = {
-        desc = "Grep Files";
-        action = "<cmd>lua require('telescope.builtin').live_grep()<CR>";
-        silent = true;
-      };
-      "<leader>fb" = {
-        desc = "Find Buffer";
-        action = "<cmd>lua require('telescope.builtin').buffers()<CR>";
-        silent = true;
-      };
-      "<leader>fh" = {
-        desc = "Find Help";
-        action = "<cmd>lua require('telescope.builtin').help_tags()<CR>";
-        silent = true;
-      };
-      "<leader>fd" = {
-        desc = "Find Diagnostics";
-        action = "<cmd>lua require('telescope.builtin').diagnostics()<CR>";
-        silent = true;
-      };
-      "<leader>ft" = {
-        desc = "Find Treesitter";
-        action = "<cmd>lua require('telescope.builtin').treesitter()<CR>";
-        silent = true;
-    };
-    };
-  };
-  extraPackages = with pkgs; [ fzf ];
-}
+    }
 
+    {
+      mode = "n";
+      key = "<leader>ff";
+      action = "<cmd>lua require('telescope.builtin').find_files()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
+        desc = "Find Files";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>fg";
+      action = "<cmd>lua require('telescope.builtin').live_grep()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
+        desc = "Grep Files";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>fb";
+      action = "<cmd>lua require('telescope.builtin').buffers()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
+        desc = "Find Buffer";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>fh";
+      action = "<cmd>lua require('telescope.builtin').help_tags()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
+        desc = "Find Help";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>fd";
+      action = "<cmd>lua require('telescope.builtin').diagnostics()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
+        desc = "Find Diagnostics";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>ft";
+      action = "<cmd>lua require('telescope.builtin').treesitter()<CR>";
+      #    lua = true;
+      options = {
+        silent = true;
+        desc = "Find Treesitter";
+      };
+    }
+  ];
+  extraPackages = with pkgs; [fzf];
+}

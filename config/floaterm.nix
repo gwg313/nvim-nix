@@ -1,13 +1,16 @@
 {
-  plugins.floaterm = { enable = true; };
+  plugins.floaterm = {enable = true;};
 
-  maps = {
-    normal = {
-      "<c-t>" = {
-        desc = "Terminal";
-        action = ":FloatermToggle<CR>";
+  keymaps = [
+    {
+      mode = "n";
+      key = "<c-t>";
+      action = ":FloatermToggle<CR>";
+      #    lua = true;
+      options = {
         silent = true;
+        desc = "Terminal";
       };
-    };
-  };
+    }
+  ];
 }
