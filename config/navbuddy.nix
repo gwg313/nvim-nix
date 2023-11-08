@@ -1,18 +1,18 @@
 {
-  plugins.neogit = {
+  plugins.navbuddy = {
     enable = true;
-    disableCommitConfirmation = true;
+    lsp.autoAttach = true;
   };
 
   keymaps = [
     {
       mode = "n";
-      key = "<leader>gg";
-      action = ":Neogit<CR>";
+      key = "<leader>lb";
+      action = ":Navbuddy<CR>";
       #    lua = true;
       options = {
         silent = true;
-        desc = "Neogit";
+        desc = "Navbuddy";
       };
     }
   ];

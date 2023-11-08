@@ -1,14 +1,14 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   plugins.lsp = {
     enable = true;
     servers = {
-      #      nixd.enable = true;
+      nixd.enable = true;
       pyright.enable = true;
       bashls.enable = true;
       terraformls.enable = true;
       yamlls.enable = true;
       gopls.enable = true;
+      elixirls.enable = true;
     };
   };
 
@@ -18,11 +18,11 @@
     enable = true;
     cmp.enable = true;
   };
-  plugins.luasnip = { 
-    enable = true; 
+  plugins.luasnip = {
+    enable = true;
   };
   plugins.cmp_luasnip.enable = true;
-  extraPackages = with pkgs; [ fzf ];
+  extraPackages = with pkgs; [fzf];
 
   plugins.nvim-cmp = {
     enable = true;
@@ -39,31 +39,35 @@
           end
           end
         '';
-        modes = [ "i" "s" ];
+        modes = ["i" "s"];
       };
     };
     sources = [
-      { name = "buffer"; }
-      { name = "luasnip"; }
-      { name = "nvim_lsp"; }
-      { name = "path"; }
-      { name = "tmux"; }
+      {name = "buffer";}
+      {name = "luasnip";}
+      {name = "nvim_lsp";}
+      {name = "path";}
+      {name = "tmux";}
     ];
   };
 
-  plugins.cmp-buffer = { enable = true; };
+  plugins.cmp-buffer = {enable = true;};
 
-  plugins.cmp-nvim-lsp = { enable = true; };
-  plugins.cmp-nvim-lua = { enable = true; };
+  plugins.cmp-nvim-lsp = {enable = true;};
+  plugins.cmp-nvim-lua = {enable = true;};
 
-  plugins.cmp-path = { enable = true; };
+  plugins.cmp-path = {enable = true;};
 
-  maps = {
-    normal = {
-      "<leader>lf" = {
-        action = ":lua vim.lsp.buf.format()<CR>";
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>lf";
+      action = ":lua vim.lsp.buf.format()<CR>";
+      #    lua = true;
+      options = {
         silent = true;
+        desc = "Format";
       };
-    };
-  };
+    }
+  ];
 }

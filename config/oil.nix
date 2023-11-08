@@ -1,8 +1,8 @@
-{ pkgs, ... }: {
-  plugins.oil = { enable = true; };
+{pkgs, ...}: {
+  plugins.oil = {enable = true;};
 
-  plugins.oil.columns.icon = { enable = true; };
-  extraPlugins = with pkgs.vimPlugins; [ nvim-web-devicons ];
+  plugins.oil.columns.icon = {enable = true;};
+  extraPlugins = with pkgs.vimPlugins; [nvim-web-devicons];
 
   plugins.oil.keymaps = {
       "g?" = "actions.show_help";
@@ -20,14 +20,17 @@
       "gs" = "actions.change_sort";
       "g." = "actions.toggle_hidden";
     };
-
-  maps = {
-    normal = {
-      "<leader>_" = {
-        action = "<cmd>Oil<CR>";
+    
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>_";
+      action = "<cmd>Oil --float<CR>";
+      #    lua = true;
+      options = {
         silent = true;
+        desc = "󰏇 Oil";
       };
-    };
-  };
+    }
+  ];
 }
-

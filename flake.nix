@@ -3,37 +3,64 @@
 
   inputs = {
     nixvim.url = "github:pta2002/nixvim";
-    flake-utils.url = "github:numtide/flake-utils";
+
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
+
+    pre-commit-hooks.url = "github:cachix/pre-commit-hooks.nix";
+    pre-commit-hooks.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
+    self,
     nixpkgs,
+    pre-commit-hooks,
     nixvim,
-    flake-utils,
     ...
-  } @ inputs: let
-    config = import ./config; # import the module directly
+  }: let
+    withSystem = f:
+      nixpkgs.lib.fold nixpkgs.lib.recursiveUpdate {} (
+        map f [
+          "x86_64-linux"
+          "x86_64-darwin"
+          "aarch64-linux"
+          "aarch64-darwin"
+        ]
+      );
   in
-    flake-utils.lib.eachDefaultSystem (system: let
-      nixvimLib = nixvim.lib.${system};
-      pkgs = import nixpkgs {inherit system;};
-      nixvim' = nixvim.legacyPackages.${system};
-      nvim = nixvim'.makeNixvimWithModule {
-        inherit pkgs;
-        module = config;
-      };
-    in {
-      checks = {
-        # Run `nix flake check .` to verify that your config is not broken
-        default = nixvimLib.check.mkTestDerivationFromNvim {
-          inherit nvim;
-          name = "My nixvim configuration";
+    withSystem (
+      system: let
+        pkgs = nixpkgs.legacyPackages.${system};
+        config = import ./config;
+        nixvimLib = nixvim.lib.${system};
+        nixvim' = nixvim.legacyPackages.${system};
+        nvim = nixvim'.makeNixvimWithModule {
+          inherit pkgs;
+          module = config;
         };
-      };
-
-      packages = {
-        # Lets you run `nix run .` to start nixvim
-        default = nvim;
-      };
-    });
+      in {
+        packages.${system} = {
+          default = nvim;
+        };
+        devShells.${system} = {
+          default = pkgs.mkShell {
+            inherit (self.checks.${system}.pre-commit-check) shellHook;
+            buildInputs = with pkgs; [
+              alejandra
+            ];
+          };
+        };
+        checks.${system} = {
+          default = nixvimLib.check.mkTestDerivationFromNvim {
+            inherit nvim;
+            name = "My nixvim configuration";
+          };
+          pre-commit-check = pre-commit-hooks.lib.${system}.run {
+            src = ./.;
+            hooks = {
+              alejandra.enable = true;
+            };
+          };
+        };
+      }
+    );
 }

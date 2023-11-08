@@ -1,11 +1,12 @@
 {
-  plugins.null-ls = {
+  plugins.none-ls = {
     enable = true;
     sources = {
       code_actions = {
         statix.enable = true;
         eslint_d.enable = true;
         shellcheck.enable = true;
+        gitsigns.enable = true;
       };
       diagnostics = {
         statix.enable = true;
@@ -21,5 +22,4 @@
       };
     };
   };
-
 }
