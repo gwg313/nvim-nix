@@ -19,6 +19,7 @@
         black.enable = true;
         isort.enable = true;
         shfmt.enable = true;
+        prettier.enable = true;
       };
     };
   };
