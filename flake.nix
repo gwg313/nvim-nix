@@ -2,7 +2,7 @@
   description = "gwg313 nixvim configuration";
 
   inputs = {
-    nixvim.url = "github:pta2002/nixvim";
+    nixvim.url = "github:nix-community/nixvim";
 
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
 
