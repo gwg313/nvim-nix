@@ -13,6 +13,7 @@
     ./extraplugins.nix
     ./flash.nix
     ./floaterm.nix
+    ./fugitive.nix
     ./git-worktree.nix
     ./gitsigns.nix
     ./harpoon.nix
