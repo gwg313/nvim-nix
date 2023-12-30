@@ -4,6 +4,7 @@
     servers = {
       ansiblels.enable = true;
       bashls.enable = true;
+      dhall-lsp-server.enable = true;
       dockerls.enable = true;
       elixirls.enable = true;
       gopls.enable = true;
