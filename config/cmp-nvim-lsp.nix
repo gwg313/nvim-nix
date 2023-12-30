@@ -2,13 +2,17 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      nixd.enable = true;
-      pyright.enable = true;
+      ansiblels.enable = true;
       bashls.enable = true;
+      dockerls.enable = true;
+      elixirls.enable = true;
+      gopls.enable = true;
+      nixd.enable = true;
+      prismals.enable = true;
+      pyright.enable = true;
+      tailwindcss.enable = true;
       terraformls.enable = true;
       yamlls.enable = true;
-      gopls.enable = true;
-      elixirls.enable = true;
     };
   };
 
