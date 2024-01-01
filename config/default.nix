@@ -2,7 +2,6 @@
   # Import all your configuration modules here
   imports = [
     ./autopairs.nix
-    #    ./bufferline.nix
     ./cmp-nvim-lsp.nix
     ./colorscheme.nix
     ./comment-nvim.nix
