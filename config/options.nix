@@ -13,6 +13,7 @@
       undofile = true; # Automatically save and restore undo history
       signcolumn = "yes"; # Whether to show the signcolumn
       termguicolors = true; # Enables 24-bit RGB color in the |TUI|
+      shortmess = "A";
 
       # Tab options
       tabstop =
