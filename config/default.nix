@@ -25,11 +25,13 @@
     ./navbuddy.nix
     ./navic.nix
     ./neogit.nix
-    ./neorg.nix
+    #./neorg.nix
     ./nix.nix
     ./noice.nix
     ./none-ls.nix
     ./notify.nix
+    ./octo.nix
+    ./obsidian.nix
     ./oil.nix
     ./options.nix
     ./surround.nix
