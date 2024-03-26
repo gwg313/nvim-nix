@@ -2,7 +2,6 @@
   # Import all your configuration modules here
   imports = [
     ./autopairs.nix
-    ./cmp-nvim-lsp.nix
     ./colorscheme.nix
     ./comment-nvim.nix
     ./dadbod.nix
@@ -19,6 +18,7 @@
     ./lightbulb.nix
     ./lualine.nix
     ./luasnip.nix
+    ./lsp
     ./mappings.nix
     ./markdown-preview.nix
     ./multicursors.nix
@@ -28,10 +28,10 @@
     #./neorg.nix
     ./nix.nix
     ./noice.nix
-    ./none-ls.nix
+    #   ./none-ls.nix
     ./notify.nix
     ./octo.nix
-    ./obsidian.nix
+    #   ./obsidian.nix
     ./oil.nix
     ./options.nix
     ./surround.nix

@@ -1,7 +1,7 @@
 {
   plugins.flash = {
     enable = true;
-    labels = "wieatnsh";
+    labels = "rsthnaio";
   };
 
   keymaps = [

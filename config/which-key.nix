@@ -7,6 +7,7 @@
       "<leader>w" = " Window";
       "<leader>d" = " Dap";
       "<leader>n" = " Neorg";
+      "<leader>l" = "󰒋 Lsp";
     };
   };
 }

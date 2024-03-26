@@ -1,7 +1,9 @@
 {
   plugins.markdown-preview = {
     enable = true;
-    browser = "firefox";
-    autoClose = false;
+    settings = {
+      browser = "firefox";
+      autoClose = false;
+    };
   };
 }
