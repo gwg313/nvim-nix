@@ -1,10 +1,10 @@
 {pkgs, ...}: {
   plugins.oil = {enable = true;};
 
-  plugins.oil.columns.icon = {enable = true;};
+  # plugins.oil.columns.icon = {enable = true;};
   extraPlugins = with pkgs.vimPlugins; [nvim-web-devicons];
 
-  plugins.oil.keymaps = {
+  plugins.oil.settings.keymaps = {
     "g?" = "actions.show_help";
     "<CR>" = "actions.select";
     "<C-s>" = "actions.select_vsplit";

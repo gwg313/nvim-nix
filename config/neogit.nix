@@ -1,7 +1,6 @@
 {
   plugins.neogit = {
     enable = true;
-    disableCommitConfirmation = true;
   };
 
   keymaps = [

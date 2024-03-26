@@ -1,0 +1,5 @@
+{
+  plugins.lean = {
+    enable = true;
+  };
+}
