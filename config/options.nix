@@ -7,7 +7,7 @@
 
       providers.wl-copy.enable = true;
     };
-    options = {
+    opts = {
       relativenumber = true; # Show relative line numbers
       number = true; # Show line numbers
       undofile = true; # Automatically save and restore undo history

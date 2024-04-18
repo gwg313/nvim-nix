@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: {
-  imports = [./cmp.nix ./none-ls.nix];
+  imports = [./cmp.nix ./none-ls.nix ./copilot-cmp.nix];
   plugins = {
     lsp-format.enable = true;
     lspsaga.enable = true;

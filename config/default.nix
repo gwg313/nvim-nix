@@ -5,7 +5,7 @@
     ./colorscheme.nix
     ./comment-nvim.nix
     ./dadbod.nix
-    ./dap.nix
+    # ./dap.nix
     #    ./dashboard.nix
     ./diffview.nix
     ./extraplugins.nix
@@ -15,6 +15,7 @@
     ./git-worktree.nix
     ./gitsigns.nix
     ./harpoon.nix
+    #./lean.nix
     ./lightbulb.nix
     ./lualine.nix
     ./luasnip.nix
@@ -28,7 +29,6 @@
     #./neorg.nix
     ./nix.nix
     ./noice.nix
-    #   ./none-ls.nix
     ./notify.nix
     ./octo.nix
     #   ./obsidian.nix
@@ -42,5 +42,6 @@
     ./trouble.nix
     ./undotree.nix
     ./which-key.nix
+    ./vimtex.nix
   ];
 }
