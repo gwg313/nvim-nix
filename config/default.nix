@@ -15,7 +15,7 @@
     ./git-worktree.nix
     ./gitsigns.nix
     ./harpoon.nix
-    #./lean.nix
+    ./lean.nix
     ./lightbulb.nix
     ./lualine.nix
     ./luasnip.nix

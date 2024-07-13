@@ -14,6 +14,7 @@
       tailwindcss.enable = true;
       terraformls.enable = true;
       yamlls.enable = true;
+      leanls.enable = true;
     };
   };
 
